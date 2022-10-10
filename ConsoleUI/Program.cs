@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 
 namespace ConsoleUI
@@ -12,11 +13,11 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarManager carManager = new CarManager(new InMemoryCarDal());
+            CarManager carManager = new CarManager(new EfCarDal());
 
             foreach (var car in carManager.GetAll())
             {
-                Console.WriteLine(car.BrandId);
+                Console.WriteLine(car.DailyPrice);
             }
             Console.ReadLine();
         }
