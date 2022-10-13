@@ -41,14 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IBrandService.cs" />
     <Compile Include="Abstract\ICarService.cs" />
+    <Compile Include="Abstract\IColorService.cs" />
+    <Compile Include="Concrete\BrandManager.cs" />
     <Compile Include="Concrete\CarManager.cs" />
+    <Compile Include="Concrete\ColorManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{8FF1693E-86C2-4F2D-A488-5C4EA0B8F37F}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{53BBDFE9-0F69-434A-925E-8AAC02730589}</Project>
       <Name>DataAccess</Name>

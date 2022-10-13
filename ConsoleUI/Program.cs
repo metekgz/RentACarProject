@@ -13,13 +13,32 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
+            //CarTest();
+
+            //ColorTest();
+            
+            
+            Console.ReadLine();
+        }
+
+        private static void ColorTest()
+        {
+            ColorManager colorManager = new ColorManager(new EfColorDal());
+
+            foreach (var color in colorManager.GelAll())
+            {
+                Console.WriteLine(color.ColorId);
+            }
+        }
+
+        private static void CarTest()
+        {
             CarManager carManager = new CarManager(new EfCarDal());
 
             foreach (var car in carManager.GetAll())
             {
                 Console.WriteLine(car.DailyPrice);
             }
-            Console.ReadLine();
         }
     }
 }

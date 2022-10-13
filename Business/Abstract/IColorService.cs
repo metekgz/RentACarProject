@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Core.DataAccess;
 using Entities.Concrete;
 
-namespace DataAccess.Abstract
+namespace Business.Abstract
 {
-    public interface IBrandDal:IEntityRepository<Brand>
+   public interface IColorService
     {
+        List<Color> GelAll();
+        Color GetById(int colorId);
     }
 }
