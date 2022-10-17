@@ -15,5 +15,12 @@ namespace Business.Constants
         public static string DailyPriceInvalid = "Araç Fiyatı Geçersiz";
         public static string MaintenanceTime = "Sistem Bakımda";
         public static string CarsListed = "Araçlar Listelendi";
+        public static string UserAdded = "Kişi Eklendi";
+        public static string UserDeleted = "Kişi Silindi";
+        public static string UserUpdated = "Kişi Güncellendi";
+        public static string InvalidRental = "Kiralama Geçersiz";
+        public static string RentalAdded = "Kiralandı";
+        public static string RentalDeleted = "Kiralama Silindi";
+        public static string RentalUpdated = "Kiralama Güncellendi";
     }
 }
