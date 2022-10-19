@@ -21,7 +21,14 @@ namespace Repository.Concrete.EntityFramework
                 var result = from c in context.Cars
                              join b in context.Brands
                              on c.CarId equals b.BrandId
-                             select new CarDetailDto { CarId = c.CarId, DailyPrice = c.DailyPrice, BrandId = b.BrandId,BrandName=b.BrandName };
+                             select new CarDetailDto
+                             {
+                                 CarId = c.CarId,
+                                 CarName = c.CarName,
+                                 BrandId = b.BrandId,
+                                 BrandName = b.BrandName,
+                                 DailyPrice = c.DailyPrice
+                             };
                 return result.ToList();
             }
         }
