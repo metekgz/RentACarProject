@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Business.Concrete;
-using DataAccess.Concrete.EntityFramework;
-using DataAccess.Concrete.InMemory;
+using Repository.Concrete.EntityFramework;
+using Repository.Concrete.InMemory;
 
 namespace ConsoleUI
 {

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Core.DataAccess.EntityFramework;
-using DataAccess.Abstract;
-using Entities.Concrete;
-using Entities.DTOs;
+using Core.Repository.EntityFramework;
+using Repository.Abstract;
+using Models.Concrete;
+using Models.DTOs;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataAccess.Concrete.EntityFramework
+namespace Repository.Concrete.EntityFramework
 {
     public class EfCarDal : EfEntityRepositoryBase<Car, CarDatabaseContext>, ICarDal
     {

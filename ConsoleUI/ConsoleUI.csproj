@@ -173,13 +173,13 @@
       <Project>{8FF1693E-86C2-4F2D-A488-5C4EA0B8F37F}</Project>
       <Name>Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+    <ProjectReference Include="..\DataAccess\Repository.csproj">
       <Project>{53bbdfe9-0f69-434a-925e-8aac02730589}</Project>
-      <Name>DataAccess</Name>
+      <Name>Repository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Entities\Entities.csproj">
+    <ProjectReference Include="..\Entities\Models.csproj">
       <Project>{978d31df-59ba-43d4-bd39-ea1457fea8fd}</Project>
-      <Name>Entities</Name>
+      <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

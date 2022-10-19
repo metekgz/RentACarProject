@@ -178,9 +178,9 @@
       <Project>{8FF1693E-86C2-4F2D-A488-5C4EA0B8F37F}</Project>
       <Name>Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Entities\Entities.csproj">
+    <ProjectReference Include="..\Entities\Models.csproj">
       <Project>{978D31DF-59BA-43D4-BD39-EA1457FEA8FD}</Project>
-      <Name>Entities</Name>
+      <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

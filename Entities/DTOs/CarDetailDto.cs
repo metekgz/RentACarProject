@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Core;
-using Core.Entities;
+using Core.Models;
 
-namespace Entities.DTOs
+namespace Models.DTOs
 {
     public class CarDetailDto : IDto
     {

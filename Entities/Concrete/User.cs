@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Core.Entities;
+using Core.Models;
 
-namespace Entities.Concrete
+namespace Models.Concrete
 {
-    public class User : IEntity
+    public class User : IModel
     {
         public int UserId{ get; set; }
         public string UserFirstName { get; set; }

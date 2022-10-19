@@ -4,11 +4,11 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Core.DataAccess.EntityFramework;
-using DataAccess.Abstract;
-using Entities.Concrete;
+using Core.Repository.EntityFramework;
+using Repository.Abstract;
+using Models.Concrete;
 
-namespace DataAccess.Concrete.EntityFramework
+namespace Repository.Concrete.EntityFramework
 {
     public class EfColorDal : EfEntityRepositoryBase<Color, CarDatabaseContext>, IColorDal
     {

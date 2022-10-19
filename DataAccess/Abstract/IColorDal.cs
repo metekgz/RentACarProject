@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Core.DataAccess;
-using Entities.Concrete;
+using Core.Repository;
+using Models.Concrete;
 
-namespace DataAccess.Abstract
+namespace Repository.Abstract
 {
     public interface IColorDal:IEntityRepository<Color>
     {

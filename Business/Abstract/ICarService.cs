@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Core.Utilities.Results;
-using Entities.Concrete;
-using Entities.DTOs;
+using Models.Concrete;
+using Models.DTOs;
 
 namespace Business.Abstract
 {

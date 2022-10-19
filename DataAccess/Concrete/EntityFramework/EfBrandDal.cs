@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Core.DataAccess.EntityFramework;
-using DataAccess.Abstract;
-using Entities.Concrete;
+using Core.Repository.EntityFramework;
+using Repository.Abstract;
+using Models.Concrete;
 
-namespace DataAccess.Concrete.EntityFramework
+namespace Repository.Concrete.EntityFramework
 {
     public class EfBrandDal : EfEntityRepositoryBase<Brand, CarDatabaseContext>, IBrandDal
     {

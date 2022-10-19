@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Business.Abstract;
-using DataAccess.Abstract;
-using Entities.Concrete;
+using Repository.Abstract;
+using Models.Concrete;
 
 namespace Business.Concrete
 {

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Results;
-using DataAccess.Abstract;
-using Entities.Concrete;
-using Entities.DTOs;
+using Repository.Abstract;
+using Models.Concrete;
+using Models.DTOs;
 
 namespace Business.Concrete
 {
@@ -38,7 +38,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Car>> GetAll()
         {
-            if (DateTime.Now.Hour == 20)
+            if (DateTime.Now.Hour == 2)
             {
                 return new ErrorDataResult<List<Car>>(Messages.MaintenanceTime);
             }

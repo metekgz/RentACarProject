@@ -4,11 +4,11 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using DataAccess.Abstract;
-using Entities.Concrete;
-using Entities.DTOs;
+using Repository.Abstract;
+using Models.Concrete;
+using Models.DTOs;
 
-namespace DataAccess.Concrete.InMemory
+namespace Repository.Concrete.InMemory
 {
     public class InMemoryCarDal : ICarDal
     {

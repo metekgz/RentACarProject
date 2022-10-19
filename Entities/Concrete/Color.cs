@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Core.Entities;
+using Core.Models;
 
-namespace Entities.Concrete
+namespace Models.Concrete
 {
-   public class Color:IEntity
+   public class Color:IModel
     {
         public int ColorId { get; set; }
         public string ColorName { get; set; }

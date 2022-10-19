@@ -4,13 +4,13 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Core.Entities;
+using Core.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Core.DataAccess.EntityFramework
+namespace Core.Repository.EntityFramework
 {
     public class EfEntityRepositoryBase<TEntity, TContext>:IEntityRepository<TEntity>
-        where TEntity : class, IEntity, new()
+        where TEntity : class, IModel, new()
         where TContext : DbContext, new()
     {
         public void Add(TEntity entity)

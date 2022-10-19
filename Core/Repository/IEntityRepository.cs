@@ -4,11 +4,11 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Core.Entities;
+using Core.Models;
 
-namespace Core.DataAccess
+namespace Core.Repository
 {
-    public interface IEntityRepository<T> where T:class,IEntity,new()
+    public interface IEntityRepository<T> where T:class,IModel,new()
     {
         List<T> GetAll(Expression<Func<T,bool>>filter=null);
         void Add(T entity);

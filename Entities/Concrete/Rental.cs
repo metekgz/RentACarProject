@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Core.Entities;
+using Core.Models;
 
-namespace Entities.Concrete
+namespace Models.Concrete
 {
-   public class Rental:IEntity
+   public class Rental:IModel
     {
         public int RentalId { get; set; }
         public int CarId { get; set; }
