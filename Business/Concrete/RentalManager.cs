@@ -8,6 +8,9 @@ using Business.Constants;
 using Core.Utilities.Results;
 using Repository.Abstract;
 using Models.Concrete;
+using Core.CrossCuttingConcerns.Validation;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 
 namespace Business.Concrete
 {
@@ -20,12 +23,15 @@ namespace Business.Concrete
             _rentalDal = rentalDal;
         }
 
+        [ValidationAspect(typeof(RentalValidator))]
+
         public IResult Add(Rental rental)
         {
-            if (rental.ReturnDate == null)
-            {
-                return new Result(false, Messages.InvalidRental);
-            }
+            //if (rental.ReturnDate == null)
+            //{
+            //    return new Result(false, Messages.InvalidRental);
+            //}
+
             _rentalDal.Add(rental);
             return new Result(true, Messages.RentalAdded);
         }

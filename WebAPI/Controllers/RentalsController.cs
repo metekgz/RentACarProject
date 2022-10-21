@@ -26,9 +26,9 @@ namespace WebAPI.Controllers
             var result = _rentalService.GetAll();
             if (result.Success)
             {
-                return Ok();
+                return Ok(result);
             }
-            return BadRequest();
+            return BadRequest(result);
         }
 
         [HttpGet("getbyrentalid")]
@@ -37,9 +37,9 @@ namespace WebAPI.Controllers
             var result = _rentalService.GetByRentalId(id);
             if (result.Success)
             {
-                return Ok();
+                return Ok(result);
             }
-            return BadRequest();
+            return BadRequest(result);
         }
         [HttpPost("add")]
         public IActionResult Add(Rental rental)
@@ -47,9 +47,9 @@ namespace WebAPI.Controllers
             var result = _rentalService.Add(rental);
             if (result.Success)
             {
-                return Ok();
+                return Ok(result);
             }
-            return BadRequest();
+            return BadRequest(result);
         }
     }
 }

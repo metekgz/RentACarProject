@@ -8,10 +8,13 @@ using Business.Constants;
 using Core.Utilities.Results;
 using Repository.Abstract;
 using Models.Concrete;
+using Core.CrossCuttingConcerns.Validation;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 
 namespace Business.Concrete
 {
-    public class UserManager:IUserService
+    public class UserManager : IUserService
     {
         IUserDal _userDal;
 
@@ -20,8 +23,10 @@ namespace Business.Concrete
             _userDal = userDal;
         }
 
+        [ValidationAspect(typeof(UserValidator))]
         public IResult Add(User user)
         {
+
             _userDal.Add(user);
             return new Result(true, Messages.UserAdded);
         }

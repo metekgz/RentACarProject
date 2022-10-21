@@ -9,6 +9,10 @@ using Core.Utilities.Results;
 using Repository.Abstract;
 using Models.Concrete;
 using Models.DTOs;
+using FluentValidation;
+using Business.ValidationRules.FluentValidation;
+using Core.CrossCuttingConcerns.Validation;
+using Core.Aspects.Autofac.Validation;
 
 namespace Business.Concrete
 {
@@ -21,12 +25,11 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
+        [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {
-            if (car.CarName.Length<2)
-            {
-                return new ErrorResult(Messages.CarNameInvalid);
-            }
+
+
             _carDal.Add(car);
             return new SuccessResult(Messages.CarAdded);
         }
@@ -52,7 +55,7 @@ namespace Business.Concrete
 
         public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
-            return new SuccessDataResult<List<CarDetailDto>>( _carDal.GetCarDetails());
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails());
         }
         public void Update(Car car)
         {
