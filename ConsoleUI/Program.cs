@@ -21,15 +21,7 @@ namespace ConsoleUI
             Console.ReadLine();
         }
 
-        private static void ColorTest()
-        {
-            ColorManager colorManager = new ColorManager(new EfColorDal());
-
-            foreach (var color in colorManager.GelAll())
-            {
-                Console.WriteLine(color.ColorId);
-            }
-        }
+       
 
         private static void CarTest()
         {

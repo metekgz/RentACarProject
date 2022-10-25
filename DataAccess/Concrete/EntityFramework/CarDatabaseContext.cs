@@ -15,9 +15,7 @@ namespace Repository.Concrete.EntityFramework
             optionsBuilder.UseSqlServer(@"server=DESKTOP-E87MSCU; Database=RentACar;Trusted_Connection=true");
         }
         public DbSet<Car> Cars { get; set; }
-        public DbSet<Color> Colors { get; set; }
         public DbSet<Brand> Brands { get; set; }
-        public DbSet<User> Users { get; set; }
         public DbSet<Rental> Rentals { get; set; }
     }
 }
