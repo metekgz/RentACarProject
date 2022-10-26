@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Models.Concrete;
 using Microsoft.EntityFrameworkCore;
+using Core.Models.Concrete;
 
 namespace Repository.Concrete.EntityFramework
 {
@@ -17,5 +18,9 @@ namespace Repository.Concrete.EntityFramework
         public DbSet<Car> Cars { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Rental> Rentals { get; set; }
+        public DbSet<OperationClaim> OperationClaims { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+
     }
 }

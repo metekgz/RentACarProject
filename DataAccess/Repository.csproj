@@ -155,10 +155,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IUserDal.cs" />
     <Compile Include="Abstract\IBrandDal.cs" />
     <Compile Include="Abstract\ICarDal.cs" />
     <Compile Include="Abstract\IRentalDal.cs" />
     <Compile Include="Concrete\EntityFramework\CarDatabaseContext.cs" />
+    <Compile Include="Concrete\EntityFramework\EfUserDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfBrandDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfCarDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfRentalDal.cs" />
