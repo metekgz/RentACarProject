@@ -11,6 +11,8 @@ namespace Business.Constants
     public static class Messages
     {
         public static string CarAdded = "Araç Eklendi";
+        public static string CarDeleted = "Araç Silindi";
+        public static string CarUpdated ="Araç Güncellendi";
         public static string CarNameInvalid = "Araç ismi Geçersiz";
         public static string DailyPriceAdded = "Araç Fiyatı Eklendi";
         public static string DailyPriceInvalid = "Araç Fiyatı Geçersiz";
@@ -31,5 +33,6 @@ namespace Business.Constants
         public static string SuccessfulLogin = "Başarılı giriş";
         public static string UserAlreadyExists = "Kullanıcı Mevcut";
         public static string AccessTokenCreated = "Token Oluşturuldu";
+        
     }
 }
