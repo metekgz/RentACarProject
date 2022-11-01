@@ -11,6 +11,7 @@ using Models.Concrete;
 using Core.CrossCuttingConcerns.Validation;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
+using DataAccess.Abstract;
 
 namespace Business.Concrete
 {

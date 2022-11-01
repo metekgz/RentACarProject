@@ -9,6 +9,8 @@ namespace Core.CrossCuttingConcerns.Validation
 {
     public static class ValidationTool
     {
+        // fluent validation doğrulama kodu
+        // entity ve dto eklenebileceği için object yazılır
         public static void Validate(IValidator validator, object entity)
         {
             var context = new ValidationContext<object>(entity);

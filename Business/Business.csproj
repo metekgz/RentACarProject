@@ -52,8 +52,8 @@
     <Reference Include="Microsoft.AspNetCore.Http.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.Http.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=5.0.10.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.5.0.10\lib\net461\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.3.1.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNetCore.WebUtilities, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.WebUtilities.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
@@ -123,12 +123,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IAuthService.cs" />
+    <Compile Include="Abstract\ICarImageService.cs" />
     <Compile Include="Abstract\IUserService.cs" />
     <Compile Include="Abstract\IBrandService.cs" />
     <Compile Include="Abstract\ICarService.cs" />
     <Compile Include="Abstract\IRentalService.cs" />
     <Compile Include="BusinessAspects\Autofac\SecuredOperation.cs" />
     <Compile Include="Concrete\BrandManager.cs" />
+    <Compile Include="Concrete\CarImageManager.cs" />
     <Compile Include="Concrete\CarManager.cs" />
     <Compile Include="Concrete\AuthManager.cs" />
     <Compile Include="Concrete\RentalManager.cs" />

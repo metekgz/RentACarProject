@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Core.Repository.EntityFramework;
 using Repository.Abstract;
 using Models.Concrete;
+using DataAccess.Abstract;
 
 namespace Repository.Concrete.EntityFramework
 {
